@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>
+            Responsive opthalmology website
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+        <style>
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                border: 1px solid #e7e7e7;
+                background-color: white;
+            }
+            li{
+                float: inline-end;
+            }
+            li a{
+                
+                font-size: 35px;
+                display: block;
+                color: green;
+                text-align: center;
+                padding: 38px 20px 20px 50px;
+                text-decoration: none;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            img{
+                width: 230px;
+                height: 120px;
+    
+            }
+            button{
+                padding: 10px;
+                color: whitesmoke;
+                background-color: green;
+                border-radius: 20px;
+                width: 200px;
+                font-size: 20px;
+                border: none;
+                box-shadow: 0 9px #27dc94;
+            }
+            button :hover{background-color: #3e8e41;
+
+            }
+            button:active{
+                background-color: #3e8e41;
+                box-shadow: 0 5px #666;
+                transform: translate3d(3px);
+            }
+            body{
+                background:url(../Colt\ project/back.png.jpg);
+                background-size: 1450px;
+                background-repeat: no-repeat;  
+            
+            }
+            h3{
+                font-size: 50px;
+                text-transform: uppercase;
+                color: black;
+                font-family: 'Kanit', sans-serif;
+                 font-family: 'Source Code Pro', monospace;
+            }
+            p{
+                font-size: 1.5rem;
+                color:black;
+                line-height: 2;
+            }
+             section{
+                align-items: center;
+             }
+              .about{
+                margin-top: 480px;
+                
+             }
+             .imm{
+                width: 600px;
+                height: 400px;
+                display: flex;
+                
+             }
+                      
+             h2{
+                text-align: left;
+                font-size: 48px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding-left: 5px;
+                margin-top: 5px;
+            
+             }
+             .about .row{
+                margin-left: 200px;
+                line-height: 39px;
+             }
+             .sp{
+                font-size: 1.5rem;
+             }
+             .pp{
+                line-height: 40px;
+                margin-top: 1px;
+             }
+             h4{
+                font-size: 30px;
+             }
+             .heading{
+                font-size: 45px;
+                font-family: monospace;
+                text-align: center;
+                text-transform: uppercase;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                font-weight: bolder;
+
+             }
+             .Services .box-container{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+                gap:2rem;
+             }
+             .Services{
+                background-color:white;
+             }
+             .Services .box-container{
+                text-align: center;
+                padding: 2rem;
+                background-color: white;
+                box-shadow:var(#27dc94);
+                border-radius: 0.5rem;
+             }
+             .Services .box-container .box{
+                background-color:whitesmoke;
+                padding: 2rem;
+                border-radius: 0.5rem;
+                text-align: center;
+              }
+
+             
+
+              .Process .box-container{
+                text-align: center;
+                padding: 2rem;
+                background-color: white;
+                box-shadow:var(#27dc94);
+                border-radius: 0.5rem;
+                display:grid;
+                grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+                gap:2rem;
+                
+
+              }
+              .Process .box-container .box{
+                background-color:darkcyan;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                text-align: center;
+                color: black;
+              }
+              .Process .box-container p{
+                color: black;
+              }
+              .Process .box-container h3{
+                font-size: 40px;
+
+              }
+              .reviews .box-container{
+                text-align: center;
+                padding: 2rem;
+                background-color: white;
+                box-shadow:var(#27dc94);
+                border-radius: 0.5rem;
+                display:grid;
+                grid-template-columns: repeat(auto-fit, minmax(45rem,1fr));
+                gap:2rem;
+
+              }
+              .reviews .box-container .box{
+                background-color:darkcyan;
+                text-align: center;
+                border-radius: .5rem;
+                padding: 0.5rem;
+                
+              }
+              h3{
+                font-size: 40px;
+              }
+              .reviews .heading.box-container .box{
+                color:darkcyan;
+                font-size: 2rem;
+              }
+              .btt{
+                padding: 10px;
+                color: whitesmoke;
+                background-color: green;
+                border-radius: 20px;
+                width: 200px;
+                font-size: 20px;
+                border: none;
+                box-shadow: 0 9px #27dc94;
+              }
+              .btt :hover{
+                background-color: #3e8e41;
+              }
+               .btt:active{
+                background-color: #3e8e41;
+                box-shadow: 0 5px #666;
+                transform: translate3d(3px);
+               } 
+               .contact form{
+                border-radius: .5rem;
+                background-color: lightgrey;
+                padding: 2rem;
+                margin: 0 auto;
+                max-width: 50rem;
+               }
+
+               .contact form .box{
+                width: 90%;
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                border-radius: .5rem;
+                background-color: white;
+                padding: 1.2rem 1.4rem;
+                font-size: 1.5rem;
+                color: black;
+               }
+               .contact form span{
+                font-size: 2rem;
+                color: black;
+               }
+               .contact .heading{
+                background-color:green;
+               }
+               .reviews .box-container h3{
+                background-color:whitesmoke;
+                display: inline;
+                padding-left: 10px;
+               }
+               .footer .box-container{
+                text-align: center;
+                font-size: 20px;
+                background-color: whitesmoke;
+               }
+               .contact form .message{
+                margin-bottom: 2rem;
+                border-radius: .5rem;
+                background-color: blue;
+                padding: 1.5rem 1rem;
+                font-size: 1.7rem;
+                
+               }
+              
+
+               
+
+
+
+
+
+
+
+
+            
+             
+        
+
+        </style>
+        </head>
+        <body>
+            
+            <ul>
+                <li>
+                    <a class="active" href="#Contact">Contact</a>
+                    <li><a href="#about">About</a></li>
+                   <li><a href="Reviews">Reviews</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#home">Home</a></li>                    
+                    <img src="eyelo.png.jpg" alt="eye">
+                </li>
+            </ul>
+            <section class="home" id="home">
+                <div class="container">
+                    <h3>Let use brighten<br>your vision</h3>
+                    <p> "At our eye website, we offer a spectrum of services<br>
+                        tailored to cater to your visual needs."</p>
+                   
+                    <a href="#contact" class="button"> <button> Make appointment</button></a> 
+                </div>
+            </section>
+
+
+            <section class="about" id="about">
+                <div class="container row">
+                    <div class="image">
+                        <img class="imm" src="test.png.jpg" alt="test">
+                    </div>
+                    <div class="container">
+                        <span class="sp">About us</span>
+                        <h2>True Healthcare for your family</h2>
+                       
+                    <p class="pp">"Welcome to our clinic, where compassion meets expertise. We're dedicated<br> to providing top-tier care, ensuring your well-being is our priority."</p>
+                    <a href="#contact" class="btn"><button>make appointment</button></a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="Services" id="services">
+                <h1 class="heading">our services</h1>
+                <div class="box-container container">
+                    <div class="box">
+                        <img src="imagee.jpg" alt="#">
+                        <h4>Routine eye exams</h4>
+                        <p>Regular check-ups to assess vision, eye health, and detect any potential issues.</p>
+                    </div>
+                    <div class="box">
+                        <img src="i7.jpg" alt="#">
+                        <h4>Prescription of corrective lenses:</h4>
+                        <p> Determining and prescribing glasses or contact lenses to correct vision problems like myopia, hyperopia, astigmatism, etc.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="i6.jpg" alt="#">
+                        <h4>Treatment of eye conditions</h4>
+                        <p> Managing and treating various eye conditions such as cataracts, glaucoma, macular degeneration, diabetic retinopathy, etc.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="i5.jpg" alt="#">
+                        <h4>Surgical procedures</h4>
+                        <p>Performing surgeries like cataract surgery, LASIK (laser-assisted in situ keratomileusis), corneal transplants, retinal detachment surgery, etc.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="i4.jpg" alt="#">
+                        <h4>Pediatric eye care</h4>
+                        <p>Specialized services catering to children's eye health, including exams, vision correction, and management of childhood eye conditions.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="i8.jpg" alt="#">
+                        <h4>Low vision services</h4>
+                        <p>Providing immediate attention for eye injuries, infections, sudden vision changes, etc.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="Process">
+                <h1 class="heading">work process</h1>
+                <div class="box-container container">
+            
+                    <div class="box">
+                        <img src="i2.jpg" alt="#">
+                        <h3>Registration and Examination</h3>
+                        <p>Upon arrival, you'll register at the reception and undergo preliminary 
+                            tests like visual acuity, intraocular pressure, and sometimes refraction to assess your eye health.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="i3.jpg" alt="#">
+                        <h3>Consultation:</h3>
+                        <p>You'll meet an eye specialist who will discuss your results, examine your eyes further if necessary,
+                             and recommend any treatments, prescriptions, or further tests required.
+
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="i1.jpg" alt="#">
+                        <h3>Follow-up or Treatment:</h3>
+                        <p>Depending on the diagnosis, you might be given medications, eyeglasses, contact lenses, or advised for further treatments or surgeries.
+                             A follow-up appointment may be scheduled to monitor progress.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews" id="reviews">
+                <h1 class="heading">satisfied clients</h1>
+                <div class="box-container container">
+                    <div class="box">
+                        <img src="j1.jpg" alt="$">
+                        <p>"The eye clinic's website is incredibly user-friendly, offering seamless navigation to find relevant information,<br> services, and resources easily."
+                        </p>
+                             
+                    </div>
+                    <h3>John doe</h3>
+                    
+                    <div class="box">
+                        <img src="j2.jpg" alt="$">
+                        <p>"I appreciated the detailed descriptions of various eye treatments and conditions provided on the website,<br> making it an informative hub for those seeking eye care knowledge."
+                        </p>
+                             
+                    </div>
+                    <h3>Alexandera </h3>
+                    
+                    
+                    <div class="box">
+                        <img src="j3.jpg" alt="$">
+                        <p>  "The design of the eye clinic's website is modern and inviting, instilling confidence in their professionalism<br> and commitment to excellent eye care services."</p>
+                             
+                    </div>
+                    <h3>syeed noor khan</h3>
+                    
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <h1 class="heading">make appointment</h1>
+
+                <form action="connect.php" method="POST">
+                        <p class="message">Testing message box</p>
+                    <span>Your name :</span>
+                 <input type="text" name="name" placeholder="enter your name" class="box">
+                 <span>Your email :</span>
+                 <input type="email" name="email" placeholder="enter your email" class="box"> 
+                 <span>Your number :</span> 
+                 <input type="number" name="number" placeholder="enter your number" class="box">  
+                 <span>Appointment date :</span>
+                 <input type="datetime-local" name="date"  class="box">  
+                 <input  class="btt"type="submit" value="make appointment"  name="submit" class="box">  
+                   
+                </form>
+            </section>
+
+            <section class="footer">
+                <div class="box-container container">
+                    <div class="box">
+                        <h3>phone number</h3>
+                        <p>+91-9008749883</p>
+                        <p>+91-9008749563</p>
+                    </div>
+                    <div class="box">
+                        <h3>opening hours</h3>
+                        <p>9:00am to 8:00pm </p>
+                        
+                    </div>
+                    <div class="box">
+                        <h3>email address </address></h3>
+                        <p>guruprasad2903@gmail.com</p>
+                        <p>guruprasad3986@gmail.com</p>
+                    </div>
+                    <div class="box">
+                        <h3>our address </h3>
+                        <p>V.V puram, bangalore 
+                            India-562162
+                        </p>
+                        <p>+91-9008749563</p>
+                    </div>
+                </div>
+            </section>
+            
+
+        </body>
+
+   
