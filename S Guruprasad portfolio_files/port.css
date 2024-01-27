@@ -1,0 +1,94 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color: grey;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 72px;
+    font-size: 30px;
+
+
+}
+.sidebar nav{
+    padding: 10px;
+}
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 35px 0;
+    
+}
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+    
+}
+.main{
+    width: 90vw;
+    padding: 50pxs;
+}
+.container{
+    display: flex;
+
+}
+.infocontainer{
+    
+    height: 68vh;
+    width:80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+.Hello{
+    font-size: 50px;
+    font-family:'Source Code Pro', monospace;
+}
+.name{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about{
+    font-size: 30px;
+}
+
+.buttons button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: blue;
+    font-weight: boldd;
+    font-size: 21px;
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+.buttons button:hover{
+   background-color: white;
+    color: blue;
+}
+
+
+
+.devpic img {
+    height: 68vh;
+    justify-content: space-around;
+    border-radius: 
+
+}
